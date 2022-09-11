@@ -1,13 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600;700;800&display=swap');
+
+html {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+* {
+    font-family: 'Readex Pro', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.primary-button {
+    color: rgb(255,255,255);
+    text-transform: uppercase;
+    font-size: 15px;
+    background: linear-gradient(30deg, rgb(48, 213, 254), rgb(0, 52, 255));
+    padding: 12px 30px;
+    border-radius: 30px;
+    border: none;
+}
+
+.primary-button:hover {
+    background: linear-gradient(270deg, rgb(48, 213, 254), rgb(0, 52, 255));
 }
