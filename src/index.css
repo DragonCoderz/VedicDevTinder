@@ -27,3 +27,41 @@ body {
 .primary-button:hover {
     background: linear-gradient(270deg, rgb(48, 213, 254), rgb(0, 52, 255));
 }
+/* Navbar Styling*/
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .nav-button {
+    color: rgb(0, 52, 255);
+    background-color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    margin: 10px;
+}
+
+/* applies to anything with a class name of logo within the nav  */
+nav .logo-container {
+    width: 170px;
+    margin: 15px;
+}
+nav .logo-container .logo {
+    width: 100%;
+
+}
+
+/* Homepage Styling */
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.65) 0%,
+            rgba(0, 0, 0, 0) 100%
+    )
+}
