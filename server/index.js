@@ -145,4 +145,16 @@ app.get('/users', async (req, res) => {
     }
 })
 
+app.get('/gendered-users', async (req, res) => {
+    const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
+    const gender = req.query.gender
+
+    try {
+        await client.connect()
+        const database = client.db('app-data')
+        const users = await database.collection('users')
+        const query = {gender_identity: {$eq: gender}}
+    }
+})
+
 app.listen(PORT, () => console.log(('Server running on PORT: ') + PORT))
