@@ -104,14 +104,14 @@ const Dashboard = () => {
             <ChatContainer user={user}/>
                 <div className = "swipe-container">
                     <div className = "card-container">
-                        {/* {characters.map((character) =>
+                        {characters.map((character) =>
                             <TinderCard className='swipe' key={character.name} onSwipe={(dir) => swiped(dir, character.name)} onCardLeftScreen={() => outOfFrame(character.name)}>
                                 <div style={{ backgroundImage: 'url(' + character.url + ')' }} className='card'>
                                     <h3>{character.name}</h3>
                                 </div>
                             </TinderCard>
-                        )} */}
-                        {filteredGenderedUsers?.map((genderedUser) =>
+                        )}
+                        {/* {filteredGenderedUsers?.map((genderedUser) =>
                             <TinderCard
                                 className="swipe"
                                 key={genderedUser.user_id}
@@ -123,7 +123,7 @@ const Dashboard = () => {
                                     <h3>{genderedUser.first_name}</h3>
                                 </div>
                             </TinderCard>
-                        )}
+                        )} */}
                         <div className = "swipe-info">
                             {lastDirection ? <p>You swiped {lastDirection}</p> : <p/>}
                         </div>
